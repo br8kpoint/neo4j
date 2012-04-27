@@ -15,6 +15,9 @@ module Neo4j
           @dir = dir
         end
 
+	def klass
+	  @storage.rel_type
+	end
         # Creates a new node given the specified attributes and connect it with a relationship.
         # The new node and relationship will not be saved.
         # Both the relationship class and the node class can be specified with the has_n and has_one.
