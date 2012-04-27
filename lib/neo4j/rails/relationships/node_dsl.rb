@@ -16,7 +16,7 @@ module Neo4j
         end
 
 	def klass
-	  @storage.rel_type
+	  @storage.dsl.relationship_class
 	end
         # Creates a new node given the specified attributes and connect it with a relationship.
         # The new node and relationship will not be saved.
